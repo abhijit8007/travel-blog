@@ -9,6 +9,16 @@
 
         <title>story</title>
         <link rel="stylesheet" href="story.css">
+
+        <title>Login Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="google-signin-client_id" content="828280168697-vk0r7ri2rr2573u5j6egutr6epfqnoea.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="script.js"></script> -->
     </head>
     <body>
         <!--==============NAV BAR==============-->
@@ -51,6 +61,59 @@
                </li>
                <hr>
                </ul>
-            </div> 
+            </div>
+
+            <!--==============LOGIN================-->
+
+    <section class="home section" id="Login">
+        
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member?
+                </div>
+                <div class="post">
+                <h1><div id="my-signin2"></div></h1>
+                </div>
+                <script>
+                    function onSuccess(googleUser) {
+                        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                    }
+                    function onFailure(error) {
+                        console.log(error);
+                    }
+                    function renderButton() {
+                        gapi.signin2.render('my-signin2', {
+                            'scope': 'profile email',
+                            'width': 240,
+                            'height': 50,
+                            'longtitle': true,
+                            'theme': 'dark',
+                            'onsuccess': onSuccess,
+                            'onfailure': onFailure
+                        });
+                    }
+                    
+                </script>
+                </div>      
+
+                <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+            </form>
+        </div>
+    </section>  
+        
     </body>
 </html>
