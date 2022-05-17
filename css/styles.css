@@ -1,9 +1,9 @@
-body{
+/* body{
     margin: 0;
     padding: 0;
     background:black;
     font-family: Arial;
-}
+} */
 .navbar ul{
     list-style: none;
     background: rgb(13, 1, 19);
