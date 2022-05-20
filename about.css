@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(231, 225, 231);
+    font-family: taviraj;
+}
+.vision{
+    position: absolute;
+    margin: 70px 40px;
+}
+.vision h1{
+    color: rgb(70, 69, 69);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.vision p{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.team{
+    position: absolute;
+    margin: 320px 40px;
+}
+.team h1{
+    color: rgb(70, 69, 69);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.team p{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+img{
+    display: inline;
+    border-radius: 50%;
+    width: 150px;
+    height:150px;
+    margin: 75px;
+}
+.member{
+    position: absolute;
+    margin: 35% 50px;   
+}
+.member1{
+    position: absolute;
+    margin:55% 210px ;
+}
+.name{
+    position: absolute;
+    margin: 52% 30px;
+    color: black;
+    font-size: x-large;
+    font-family: sans-serif;
+    display: inline;
+}
+.name1{
+    position: absolute;
+    margin: 15% 155px;
+    color: black;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.name li{
+    display: inline;
+    padding: 70px;
+}
+.name1 li{
+    display: inline;
+    padding: 85px;
+}
