@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(194, 190, 190);
+}
+.box h1{
+    font-size:50px;
+    text-align: center;
+}
+.box{
+    margin: 30px 10px;
+}
+img{
+    height: 251px;
+    width: 426px;
+    margin: 25px;
+    border: 2px solid black;
+}
+.story{
+    background: rgb(194, 190, 190);
+}
+.row{
+    margin: 25px;
+    overflow: hidden;
+}
+.row1{
+    margin: 30px 255px;
+    overflow: hidden;
+}
+.row img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+.row1 img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
