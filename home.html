@@ -13,7 +13,7 @@
 
     <body>
         <!--==============NAV BAR==============-->
-        <div class ="navbar">
+        <!-- <div class ="navbar">
             <div class ="logo">PACK & GO</div>
             <ul>
                 <li><a href ="#home"> HOME</a></li>
@@ -23,42 +23,83 @@
                 <li><a id="user_name"></a></li>
                 <li><button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button></li>
             </ul>
-        </div>
-        <!--==============Home================-->
+        </div> -->
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <!-- <div class="nav__logo">
+                    <p>PACK & GO</p>
+                </div> -->
+                <a href="#" class="nav__logo">Pack&Go</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#travel" class="nav__link">Travel Stories</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a id="user_name" class="user__name"></a>
+                        </li>
+                        <li class="nav__item">
+                            <button type="button" class="sign_out_btn" onclick="signOut();">Sign Out</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
             
         <script>
             document.getElementById("user_name").innerHTML = getUserName();
             console.log(user_name);            
          </script>
 
-        <section class="home_section" id="home">
-            <div class="text">
-                <img src="image/logo.png">
-                 <h1> Travel Blog</h1>
-                 <p>Travel The World With Us</p>
-                 
-            </div>
-            
-        </section>
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <img src="image/logo.png" alt="" class="home_logo">
+                <h2 class="section__title">Travel Blog</h2>
+                <span class="section__subtitle">Travel The World With Us</span>
 
-        <!--==============My Stories================-->
-        <section class="my_stories_section" id="my_stories">
-            <div class="stories-text">
-                 <!-- <h1> My Stories</h1>
-                 <p>This is the My stories section</p> -->
-            </div>
-        </section>
-        
+            <!-- Add more data if needed -->
 
-        <!--==============About Us================-->
-        <section class="about_us_section" id="about_us">
+            </section>
 
-        </section>
+            <!--==================== TRAVEL STORIES ====================-->
+            <section class="story section" id="travel">
+                <h2 class="section__title">Travel Stories</h2>
+                
 
-        <!--==============Contact Us================-->
-        <section class="contact_us_section" id="contact_us">
+                <div class="travel-stories__container container grid">
+                    <div class="travel-stories">
+                        <p class="travel-stories__description">
+                            This is the travel-stories description area.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        </section>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Us</h2>
+                
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <p class="about__description">
+                            This is my description area.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
     
     </body>
 </html>
