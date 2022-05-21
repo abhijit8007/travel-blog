@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRAVEL BLOG</title>
+    
+        <!-- Google sign in client ID will depend on the account used for Google API and Credentials -->
+        <meta name="google-signin-client_id" content="828280168697-vk0r7ri2rr2573u5j6egutr6epfqnoea.apps.googleusercontent.com">
+
+        <link rel="stylesheet" href="css/home.css">
+        <script src="javascript/main.js"></script>
+        <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+    </head>
+
+    <body>
+        <!--==============NAV BAR==============-->
+        <div class ="navbar">
+            <div class ="logo">PACK & GO</div>
+            <ul>
+                <li><a href ="#home"> HOME</a></li>
+                <li><a href ="#my_stories"> MY STORIES</a></li>
+                <li><a href ="#about_us"> ABOUT US</a></li>  
+                <li><a href ="#contact_us"> CONTACT US</a></li>
+                <li><a id="user_name"></a></li>
+                <li><button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button></li>
+            </ul>
+        </div>
+        <!--==============Home================-->
+            
+        <script>
+            document.getElementById("user_name").innerHTML = getUserName();
+            console.log(user_name);            
+         </script>
+
+        <section class="home_section" id="home">
+            <div class="text">
+                <img src="image/logo.png">
+                 <h1> Travel Blog</h1>
+                 <p>Travel The World With Us</p>
+                 
+            </div>
+            
+        </section>
+
+        <!--==============My Stories================-->
+        <section class="my_stories_section" id="my_stories">
+            <div class="stories-text">
+                 <!-- <h1> My Stories</h1>
+                 <p>This is the My stories section</p> -->
+            </div>
+        </section>
+        
+
+        <!--==============About Us================-->
+        <section class="about_us_section" id="about_us">
+
+        </section>
+
+        <!--==============Contact Us================-->
+        <section class="contact_us_section" id="contact_us">
+
+        </section>
+    
+    </body>
+</html>

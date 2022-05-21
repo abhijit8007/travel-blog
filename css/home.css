@@ -1,9 +1,3 @@
-/* body{
-    margin: 0;
-    padding: 0;
-    background:black;
-    font-family: Arial;
-} */
 .navbar ul{
     list-style: none;
     background: rgb(13, 1, 19);
@@ -100,28 +94,4 @@ img{
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-}
-.clsvertical{
-    border-left: 2px solid black;
-    height: 150px;
-    position: absolute;
-    margin: 60px 250px;
-}
-.clsvertical1{
-    border-left: 2px solid black;
-    height: 150px;
-    position: absolute;
-    margin:60px 470px ;
-}
-.clsvertical2{
-    border-left: 2px solid black;
-    height: 150px;
-    position: absolute;
-    margin:60px 710px ;
-}
-.clsvertical3{
-    border-left: 2px solid black;
-    height: 150px;
-    position: absolute;
-    margin:60px 1060px ;
 }
