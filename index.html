@@ -1,119 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TRAVEL BLOG</title>
-        <link rel="stylesheet" href="css/styles.css">
-
-        <title>home page</title>
-        <link rel="stylesheet" href="style.css">
-
-        <title>story</title>
-        <link rel="stylesheet" href="story.css">
-
-        <title>Login Form</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <title>Travel Blog</title>
+        
         <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <meta name="google-signin-client_id" content="828280168697-vk0r7ri2rr2573u5j6egutr6epfqnoea.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script src="script.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/index.css">
+        
+        <!-- Google sign in client ID will depend on the account used for Google API and Credentials -->
+        <meta name="google-signin-client_id" content="828280168697-vk0r7ri2rr2573u5j6egutr6epfqnoea.apps.googleusercontent.com">
+        
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
+  
     <body>
-        <!--==============NAV BAR==============-->
-        <div class ="navbar">
-            <div class ="logo">PACK & GO</div>
-            <ul>
-                <li><a href ="#">HOME</a></li>
-                <li><a href ="#">MY STORIES</a></li>
-                <li><a href ="#">ABOUT US</a></li>  
-                <li><a href ="#">CONTACT US</a></li>
-            </ul>
-        </div>
-        <!--==============HOME================-->
-        <div class="text">
-            <img src="C:\Users\hp\Downloads\logo.jpeg">
-             <h1> Travel Blog</h1>
-             <p>Travel The World With Us</p>
-        </div>
-        <!-- <div>
-           <br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br>><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <hr>
-            </div> -->
-            <div class="content">
-                <ul>
-                <hr>
-                <div class="clsvertical"></div>
-                <div class="clsvertical1"></div>
-                <div class="clsvertical2"></div>
-                <div class="clsvertical3"></div>
-               <li>
-                   Travel the<br> world through<br> our website
-               </li> 
-               <li>
-                   Post about your<br> stories and <br>experience
-               </li>
-               <li>
-                   See where other traveller's<br> are going to and plan <br>your next destination
-               </li>
-               <hr>
-               </ul>
+
+        <section class="login_section" id="login">
+            <div class="text">
+                <img src="image/logo.png">
+                 <h1> Travel Blog</h1>
+                 <h4>Sign in to continue</h4>
             </div>
-
-            <!--==============LOGIN================-->
-
-    <section class="home section" id="Login">
-        
-        <div class="center">
-            <h1>Login</h1>
-            <form method="post">
-                <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>Email</label>
-                </div>
-                <div class="txt_field">
-                    <input type="password" required>
-                    <span></span>
-                    <label>Password</label>
-                </div>
-                <div class="pass">Forgot Password?</div>
-                <input type="submit" value="Login">
-                <div class="signup_link">
-                    Not a member?
-                </div>
-                <div class="post">
-                <h1><div id="my-signin2"></div></h1>
-                </div>
-                <script>
-                    function onSuccess(googleUser) {
-                        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-                    }
-                    function onFailure(error) {
-                        console.log(error);
-                    }
-                    function renderButton() {
-                        gapi.signin2.render('my-signin2', {
-                            'scope': 'profile email',
-                            'width': 240,
-                            'height': 50,
-                            'longtitle': true,
-                            'theme': 'dark',
-                            'onsuccess': onSuccess,
-                            'onfailure': onFailure
-                        });
-                    }
-                    
-                </script>
-                </div>      
-
-                <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-            </form>
-        </div>
-    </section>  
-        
+            
+            <!-- load the google sign in button -->
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </section>
+            
+        <script src="javascript/main.js"></script>
     </body>
-</html>
+</html> 
