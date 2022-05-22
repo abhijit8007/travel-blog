@@ -18,7 +18,8 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    /* --body-color: hsl(var(--hue-color), 60%, 99%); */
+    --body-color: #fff;
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -113,6 +114,16 @@
   .section__title, 
   .section__subtitle {
     text-align: center;
+  }
+
+  /*==================== LOGIN ====================*/
+  .g-signin2{
+    position: absolute;
+    width: 100%;
+}
+
+.g-signin2 > div{
+    margin: 0 auto;
   }
 
   /*==================== NAV ====================*/
