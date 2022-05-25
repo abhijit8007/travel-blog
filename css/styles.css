@@ -51,11 +51,22 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+    --mb-25-px: 25px;
+    --mb-30-px:30px;
+    --mb-255-px:255px;
+    --mb-10-px:10px;
+    --mb-100-px:100px;
 
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+    /* ==========height=========== */
+    --img-height:215px;
+    /* ===========width============ */
+    --img-width:426px;
+    /* ==========border=========== */
+    --img-border:2px;
 }
 
 
@@ -122,7 +133,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
 } 
 
   /*==================== LOGIN ====================*/
@@ -179,12 +189,42 @@
 /*==================== HOME ====================*/
 .home_logo{
   margin-top: var(--mb-3);
+  border-radius: 50%;
 }
 
 /*==================== TRAVEL STORIES ====================*/
 .travel-stories__description{
   text-align: center;   
 }
+.box {
+  font-size:var(--h1-font-size);
+  text-align: center;
+  margin: var(--mb-1-px) var(--mb-10-px);
+}
+.story_image{
+  display:inline;
+  height:var(--img-height);
+  width: var(--img-width);
+  margin: var(--mb-25-px);
+  border: var( --img-border) solid black;
+} 
+.row{
+  margin: var(--mb-25-px);
+  overflow: hidden;
+}
+.row1{
+  margin: var(--mb-30-px) var(--mb-255-px);
+  overflow: hidden;
+}
+.row img:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+.row1 img:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
 
 /*==================== ABOUT ====================*/
 .about__description{
