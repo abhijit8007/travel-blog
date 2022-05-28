@@ -1,4 +1,12 @@
 
+// URL for the web site
+var aws_url = "https://main.d3leutxz9shcs5.amplifyapp.com/";
+var localhost_url = "http://localhost:5500/"
+
+// Change this based on the test setup.
+// var url = localhost_url;
+var url = aws_url;
+
 // Define the global variables for the user information
 var user_name="user";
 
@@ -9,7 +17,7 @@ function onSignIn(googleUser) {
     sessionStorage.setItem(user_name, profile.getName());
 
     // redirect the user to the home page
-    window.location.href = "http://localhost:5500/home.html";
+    window.location.href = url + "home.html";
 }
 
 function getUserName() {
@@ -29,7 +37,7 @@ function signOut() {
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
-    window.location.href = "http://localhost:5500/index.html";
+    window.location.href = url + "index.html";
   }
 
   function onLoad() {
