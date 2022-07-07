@@ -20,7 +20,7 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     /* --body-color: hsl(var(--hue-color), 60%, 99%); */
     --body-color: rgb(231, 246, 247);
-    --nav-background-color: rgba(5, 126, 135, 0.723);
+    --nav-background-color: rgba(23, 15, 32, 0.723);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -124,18 +124,46 @@
   
   .section__title {
     font-size: var(--big-font-size);
+    color: aliceblue;
+    margin-top: var(--mb-3);
+  }
+  .section__title1 {
+    font-size: var(--big-font-size);
+    color: var(--title-color);
+    margin-top: var(--mb-3);
+  }
+  .section__title2 {
+    font-size: var(--big-font-size);
+    color: var(--title-color);
+    margin-top: var(--mb-3);
+  }
+  .section__title3 {
+    font-size: var(--big-font-size);
     color: var(--title-color);
     margin-top: var(--mb-3);
   }
   
   .section__subtitle {
     display: block;
-    font-size: var(--h1-font-size);
+    font-size: 38px;
     margin-bottom: var(--mb-3);
+    color: whitesmoke;
+    margin-top: 28px;
+  }
+  .section__subtitle1 {
+    display: block;
+    font-size:var(--h1-font-size) ;
+    margin-bottom: var(--mb-3);
+    color: black;
+    margin-top: 20px;
   }
   
-  .section__title, 
-  .section__subtitle {
+  .section__title,
+  .section__title1,
+  .section__title2,
+  .section__title3, 
+  .section__subtitle,
+  .section__subtitle1 {
     text-align: center;
   }
 
@@ -153,7 +181,9 @@
 
 .g-signin2 > div{
     margin: 0 auto;
+    
   }
+  
 
   /*==================== NAV ====================*/
 
@@ -167,6 +197,14 @@
     position: fixed;
     background-color: var(--nav-background-color);
   }
+  .nav__menu li a{
+    color: aliceblue;
+    display: block;
+    text-transform:uppercase;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+    text-align: center;
+  }
 
   .nav__item{
       display: inline-block;
@@ -174,13 +212,9 @@
 
   .nav__logo
   {
-    color: var(--title-color);
+    color: aliceblue;
     font-weight: var(--font-medium);
     font-size: var(--big-font-size);
-  }
-  
-  .nav__logo:hover {
-    color: var(--first-color);
   }
 
   .nav__menu {
@@ -193,13 +227,63 @@
   }
   
   .nav__link:hover{
-    color: var(--first-color);
+    color: rgb(180, 113, 203);
   }
 
 /*==================== HOME ====================*/
 .home_logo{
   margin-top: var(--mb-3);
   border-radius: 50%;
+}
+.home{
+  background-color: rgb(25, 14, 32);
+}
+.content{
+  position: relative;
+  width: 1520px;
+  height: auto;
+  margin: 1% 0%;
+}
+.content li{
+  padding: 70px 30px;
+  margin:20px auto;
+  color: black;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.content li{
+  display: inline-block;
+}
+.content ul{
+  list-style: none;
+  background: rgb(196, 193, 193);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.t{
+  position: absolute;
+  border-left: 3px solid black;
+  height: 150px;
+  margin: 70px 300px;
+}
+.t1{
+  position: absolute;
+  border-left: 3px solid black;
+  height: 150px;
+  margin: 70px 590px;
+}
+.t2{
+  position: absolute;
+  border-left: 3px solid black;
+  height: 150px;
+  margin: 70px 880px;
+}
+.t3{
+  position: absolute;
+  border-left: 3px solid black;
+  height: 150px;
+  margin: 70px 1225px;
 }
 
 /*==================== TRAVEL STORIES ====================*/
@@ -233,6 +317,29 @@
 .row1 img:hover{
   transform: scale(1.1);
   transition: 0.4s ease-in-out;
+}
+.sub1{
+  position: absolute;
+  margin: 1% 50px;
+  color: black;
+  font-size: x-large;
+  font-family: sans-serif;
+  display: inline;
+}
+.sub2{
+  position: absolute;
+  margin: 1% 50px;
+  color: black;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.sub1 li{
+  display: inline;
+  padding: 20px;
+}
+.sub2 li{
+  display: inline;
+  padding: 30px;
 }
 
 
@@ -308,4 +415,43 @@
 /*==================== CONTACT ====================*/
 .contact__description{
   text-align: center;
+}
+/*==================== FOOTER =====================*/
+.footer{
+  background-color: rgb(23, 8, 32);
+}
+.lulu li{
+  display: inline-block;
+  color: aliceblue;
+  font-size: 38px;
+  padding: 60px;
+  font-weight: bold;
+}
+.sub-menu{
+  position: absolute;
+  margin: 3% 130px;
+  color: aliceblue;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.sub-menu1{
+  position: absolute;
+  margin: 7% 20px;
+  color: aliceblue;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+.sub-menu li{
+  display: inline;
+  padding: 115px;  
+}
+.sub-menu1 li{
+  display: inline;
+  padding: 265px;
+}
+.sub-menu li a{
+  color: aliceblue;
+}
+.sub-menu1 li a{
+  color: aliceblue;
 }

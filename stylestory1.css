@@ -1,0 +1,35 @@
+.place h1{
+    color: rgb(11, 10, 10);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+img{
+    display: inline;
+    height: 300px;
+    width: 500px;
+    margin: 25px;
+}
+.mtfuji{
+    margin:25px;
+  overflow: hidden;
+}
+
+.blog p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 6%;
+  }
+  
+.k12{
+  text-align: center;
+  margin: 4px 3% ;
+}
+body{
+  background-color: azure;
+}
+.section p{
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 40%;
+}

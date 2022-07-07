@@ -4,7 +4,7 @@ var aws_url = "https://main.d3leutxz9shcs5.amplifyapp.com/";
 var localhost_url = "http://localhost:5500/"
 
 // Change this based on the test setup.
-// var url = localhost_url;
+//var url = localhost_url;
 var url = aws_url;
 
 // Define the global variables for the user information
