@@ -411,47 +411,63 @@
     display: inline;
     padding: 77px;
   }
+  .lulu{
+    background-color:rgb(18, 5, 24);
+    width: 1500px;
+    text-align: center;
+    margin-top: 30%;
+    position: relative;
+  }
+  .lulu li{
+    display: inline-block;
+    position: relative;
+    color: aliceblue;
+    font-size: 38px;
+    padding: 60px;
+    font-weight: bold;
+}
+.sub-menu{
+    position: absolute;
+    width: 1500px;
+    text-align: center;
+    min-width: fit-content;
+    background-color: rgb(21, 9, 21);
+    margin-top: 40%;
+    margin: 0% 0px;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.sub-menu1{
+    position: absolute;
+    width: 1500px;
+    text-align: center;
+    background-color: rgb(21, 9, 21);
+    margin-top: 50%;
+    margin: 1.8% 0px;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.sub-menu li{
+    display: inline;
+    padding: 117px; 
+    
+}
+.sub-menu1 li{
+    display: inline;
+    padding: 300px;
+   
+}
+.sub-menu li a{
+    color: aliceblue;
+}
+.sub-menu1 li a{
+    color: aliceblue;
+}
 
 /*==================== CONTACT ====================*/
 .contact__description{
   text-align: center;
 }
 /*==================== FOOTER =====================*/
-.footer{
-  background-color: rgb(23, 8, 32);
-}
-.lulu li{
-  display: inline-block;
-  color: aliceblue;
-  font-size: 38px;
-  padding: 60px;
-  font-weight: bold;
-}
-.sub-menu{
-  position: absolute;
-  margin: 3% 130px;
-  color: aliceblue;
-  font-size: x-large;
-  font-family: sans-serif;
-}
-.sub-menu1{
-  position: absolute;
-  margin: 7% 20px;
-  color: aliceblue;
-  font-size: x-large;
-  font-family: sans-serif;
-}
-.sub-menu li{
-  display: inline;
-  padding: 115px;  
-}
-.sub-menu1 li{
-  display: inline;
-  padding: 265px;
-}
-.sub-menu li a{
-  color: aliceblue;
-}
-.sub-menu1 li a{
-  color: aliceblue;
-}
